@@ -1,0 +1,90 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+/* Define variables for root element */
+
+:root {
+  --primary-color: #00AEEF;
+  --secondary-color: #cc5500;
+  --page-background: ivory;
+  --main-text-color: #333;
+  }
+  
+
+
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: var(--page-background);
+}
+
+
+#maincontent {
+    margin: 0 auto;
+    max-width: 50em;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: var(--main-txt-color);
+  }
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+
+h1, h2, strong {
+    color: #333;
+  }
+
+a {
+    color: var(--primary-color);
+  }
+
+header {
+  background-image: url("../images/header.jpg"), linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+  background-blend-mode: overlay;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-shadow: .1rem .1rem .8rem black;
+}
+
+header h3 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-shadow: .1rem .1rem .8rem black;
+}
+
+footer {
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-right: 25px;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+@media (max-width: 767px) {
+
+header h1 {
+  font-size: 2.0rem;
+  padding-bottom: .5rem;
+}
+  
+header h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1.2rem;
+}
